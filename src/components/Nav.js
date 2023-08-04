@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React from 'react';
+import PropTypes from 'prop-types';
 function Nav(props) {
     return (
         <div>
@@ -12,7 +12,7 @@ function Nav(props) {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                <a className="nav-link active" aria-current="page" href="#">{props.title2}</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Link</a>
@@ -42,6 +42,9 @@ function Nav(props) {
         </div>
     )
 }
+Nav.propTypes = {
+    title: PropTypes.string
+  };
 
 export default Nav;
 

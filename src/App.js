@@ -7,7 +7,7 @@ function App() {
   const [text, setText] = useState('hello');
   return (
     <div>
-     <Nav title="NavBar2"></Nav>
+     <Nav title="NavBar2" title2="Abouts"></Nav>
     </div>
   );
 }
